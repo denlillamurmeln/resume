@@ -8,47 +8,155 @@
   </head>
 
   <body>
-    <div class="left-bar">
+    <div class="container">
+      <div class="image" alt="picture"></div>
       <header class="header">
-        <div class="image">img</div>
-        <h1>Robert Olsson</h1>
-        <h2>Occupation</h2>
-
-        <!--<img
-          src="profPic2.jpg"
-          alt="Profile Picture"
-          width="350"
-          height="350"
-        />
-        <h1>Robert Olsson</h1>-->
+        <h1 class="title">Robert Olsson</h1>
+        <h3>Student Developer</h3>
       </header>
 
-      <div class="contact">Contact</div>
-      <div class="education">Education</div>
+      <section class="contact">
+        <h2 class="c">Contact</h2>
+        <ul class="contactInfo">
+          <a href="mailto:rooba87@gmail.com">Email</a
+          ><br />
+          <a href="https://github.com/denlillamurmeln" target="_blank">Github</a
+          ><br />
+          <a href="https://www.linkedin.com/in/robert-olsson-34b04b324/" target="_blank">Linkedin</a
+          >
+        </ul>
+      </section>
+
+      <section class="education">
+        <h2 class="ed">Education</h2>
+        <h4 class="educationInfo">Java Developer</h4>
+        <p>Teknikhögskolan</p>
+        <p>August 2024 - Ongoing</p>
+      </section>
+
+      <section class="about">
+        <h2 class="a">About Me</h2>
+        <p class="aboutInfo">
+          Ambitious and committed system developer in training with experience
+          in Java, databases and full-stack development. Curious, quick learner
+          and always ready to explore new technologies and programming
+          languages.<br><br>
+          Good knowledge of object-oriented programming, PostgreSQL, MongoDB,
+          and frameworks such as Spring and React. Used to working in agile
+          teams with GitHub and sprint planning.<br><br>
+          My previous management experience from ten years of installation in
+          the sun protection industry has given me a strong work ethic, sense of
+          responsibility and good teamwork skills. I am now looking for an LIA
+          position where I can put my knowledge into practice and continue to
+          develop in a professional environment.
+        </p>
+      </section>
+
+      <section class="experience">
+        <h2>Experience</h2>
+       <h3>Online Airbnb</h3>
+       <h4 class="stayNest"><a href="https://github.com/denlillamurmeln/StayNest" target="_blank">StayNest</a></h4>
+        <p>
+          Group Project - Databases, Backend, Frontend <br>
+          <b>Role: </b>Fullstack Developer <br>
+          <b>Technologies: </b>Java, Spring Boot, React, MongoDB, GitHub
+        </p>
+
+        <ul class="description" id="description">
+          <li>
+            Developed and integrated frontend and backend services in React and
+            Spring Boot in an agile team.
+          </li>
+          <li>
+            Implemented authentication and secure data management with MongoDB.
+          </li>
+          <li>
+            Planned and executed sprints, including sprint demos and
+            retrospectives, as part of the course project work.
+          </li>
+          <li>
+            Worked with GitHub to manage issues, pull requests and branching
+            strategies throughout the project.
+          </li>
+          <li>
+            Developed and integrated both frontend components in React and
+            backend services in Spring Boot, through collaboration in the group.
+          </li>
+        </ul>
+        <div>
+          <br><button type="desc" id="descBtn">Description</button>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2 class="s">Skills</h2>
+        <ul class="skillsInfo">
+          <li><b>Languages:</b> Java, JavaScript, Node.js, HTML/CSS</li>
+          <li>
+            <b>Technologies:</b> Spring, React, Bootstrap, PostgreSQL, MongoDB.
+          </li>
+          <li>
+            <b>Other:</b> REST API design, GitHub, IntelliJ IDEA, Visual Studio
+            Code, Agile development & SCRUM.
+          </li>
+        </ul>
+      </section>
+
+      <section class="soft-skills">
+        <h2 class="ss">Soft Skills</h2>
+        <ul class="softSkillsInfo">
+          <li>Problem solving</li>
+          <li>Teamwork</li>
+          <li>Project planning</li>
+        </ul>
+      </section>
+
+      <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="name">Name<br /></label>
+            <input type="text" id="name" placeholder="Name..." />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email<br /></label>
+            <input type="email" id="email" placeholder="Email..." />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message<br /></label>
+            <textarea
+              type="message"
+              id="message"
+              placeholder="Message..."
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" id="submitBtn">Send</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="result-container" id="resultContainer">
+        <h2>Contact Info</h2>
+        <div id="resultContent"></div>
+
+        <div>
+          <button type="hide" id="hideBtn">Hide Info</button>
+        </div>
+      </div>
+      
     </div>
 
-    <div class="right-bar">
-      <div class="about-me">About Me</div>
-      <div class="experience">Experience</div>
-      <div class="skills">Skills</div>
-      <div class="soft-skills">Soft Skills</div>
     </div>
 
-    <div class="footer">
-      <p>&copy; 2025 My Resume Site. All rights reserved.</p>
-    </div>
+    <footer class="footer">
+      <p class="foot">&copy; 2025 My Resume Site. All rights reserved.</p>
+    </footer>
 
-    <!--<header>
-      <h1>Resume Site</h1>
-    </header>
-    <section>
-      <nav>
-        <h2>Robert Olsson</h2>
-        <h4>Occupation</h4>
-        <h3>Contact</h3>
-        <h3>Education</h3>
-      </nav>
-    </section>
-    <footer><p>&copy; 2025 My Resume Site. All rights reserved.</p></footer>-->
+    <script src="description.js"></script>
+    <script src="contactform.js"></script>
   </body>
 </html>
