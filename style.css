@@ -32,7 +32,7 @@ html {
   gap: 20px 100px;
 
   grid-template-areas:
-    ". image"
+    "image image"
     "header about"
     "contact about"
     "education experience"
@@ -278,7 +278,7 @@ button:hover {
     font-size: 12px;
   }
 
-  button{
+  button {
     height: 20px;
     width: auto;
     font-size: 12px;
