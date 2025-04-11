@@ -61,9 +61,10 @@ section,
   height: 16rem;
   max-width: 960px;
 
-  background-image: url("profPic2.jpg");
+  /*background-image: url("profPic2.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  object-fit: scale-down;
   align-items: bottom;
 }
 
@@ -242,7 +243,12 @@ button:hover {
       "footer footer";
   }
 
-  .image,
+  .image{
+  height: 108%;
+
+  }
+
+  /*.image,*/
   .header,
   .contact,
   .education,
