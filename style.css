@@ -61,7 +61,7 @@ section,
   height: 16rem;
   max-width: 960px;
 
-  background-image: url("/profPic2.jpg");
+  background-image: url("profPic2.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   align-items: bottom;
